@@ -9,8 +9,6 @@ public class Assignment_day_4_q_1 {
         char character = obj.nextLine().charAt(0);
         char arr[]=usr.toCharArray();
         int sum=0;
-        Assignment_day_2_q_1 test1 = new Assignment_day_2_q_1();
-        test1.main();
         for (char c : arr) {
             if (c==character) {
                 sum+=1;

@@ -25,5 +25,6 @@ public class Assignment_day_3_q_3 {
 			p=q;
 		}
 		System.out.println("GCD is : "+q+" and LCM is : "+num1*num2/q);
+		obj.close();
 	}
 }

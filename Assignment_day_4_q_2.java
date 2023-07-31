@@ -20,7 +20,7 @@ public static void main(String[] args) {
 		String str2 = obj.nextLine();
 		char arr1[]=str1.toCharArray();
 		char arr2[]=str2.toCharArray();
-		Main test = new Main();
+		Assignment_day_4_q_2 test = new Assignment_day_4_q_2();
 		boolean anagram=true;
 		for (char i : arr1)
 		{
