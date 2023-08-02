@@ -39,7 +39,7 @@ System.out.println((a==b) | (a>b));
 System.out.println(a!=b);
 Scanner obj= new Scanner(System.in);
 System.out.print("Enter 2 numbers:\n");
-Main test = new Main();
+Practice_day_2_q_1 test = new Practice_day_2_q_1();
 test.another_prgm(obj.nextInt(),obj.nextInt());
-	}
+obj.close();	}
 }

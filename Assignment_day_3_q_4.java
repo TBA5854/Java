@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Assignment_day_3_q_4 {
     public static void main(String[] args) {
+        System.out.println("Enter number :");
         Random rand =new Random();
         Scanner obj = new Scanner(System.in);
         int rand_int=rand.nextInt(101);
