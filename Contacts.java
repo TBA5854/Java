@@ -1,9 +1,64 @@
 import java.util.Scanner;
 import java.io.*;
-public class Contacts {
-
-
-/*
+public class Main {
+	void end()
+{
+		System.out.print("\t\tThanks for Trying this program \n\n\t\t  A Program by TBA5854\n");
+		System.exit(0);
+}
+void info()
+{
+	System.out.print("1.This is a Contacts program\n");
+	System.out.print("2.This program can store , count , read contacts in csv file and them export all as vcf\n");
+	System.out.print("3.Only enter option number\n");
+	System.out.print("4.Never enter a alphabet unless asked to do so\n");
+	System.out.print("5.Never type space in names\n");
+	System.out.print("6.For 1st time use , create CSV before\n doing anything ");
+	System.out.print("7.If Contacts become corrupted , try resetting csv");
+}
+void back()
+{
+	Scanner obj = new Scanner(System.in);
+	System.out.print("\nType \"back\" to go previous page\n>>");
+	String st=obj.nextLine();
+	String b="back";
+	if (st.equals(b))
+	{
+		System.out.print("\n");
+	}
+	else
+	{
+		System.out.print("Invalid input , program is exiting !!!");
+		System.exit(1);
+	}
+	obj.close();
+}
+void read()throws FileNotFoundException
+{
+	File f = new File ("Contacts.csv");
+	Scanner obj = new Scanner(f);
+	while (obj.hasNext())
+	{
+		for(String word:obj.nextLine().split(" "))
+		{
+			System.out.println(word);
+		}
+	}
+	obj.close();
+}
+int count()throws FileNotFoundException
+{
+	File f = new File ("Contacts.csv");
+	Scanner obj = new Scanner(f);
+	int count=0;
+	while (obj.hasNext())
+	{
+		obj.nextLine();
+		count++;
+	}
+	obj.close();
+	return count-1;
+}/*
 void start()
 {
 	Scanner obj = new Scanner(f);
